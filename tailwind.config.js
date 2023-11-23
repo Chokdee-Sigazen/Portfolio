@@ -9,6 +9,11 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+      'inter':[ 'Inter', 'sans-serif'],
+
+    },
   },
   plugins: [
     require('flowbite/plugin')
