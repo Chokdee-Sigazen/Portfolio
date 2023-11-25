@@ -6,7 +6,16 @@ const Home = () => {
   return (
     <>
       <div className="bg-cover bg-fixed bg-center bg-[url('/pic/Home-bg2.gif')] bg-blue-900 w-full h-[100vh] flex">
-        <div className=" my-auto ">
+        <motion.div
+          className=" my-auto "
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        >
           <span className=" ml-10 font-inter text-3xl text-[#4FF2DF]">
             Welcome to my
           </span>
@@ -19,14 +28,14 @@ const Home = () => {
               github
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className=" bg-[#1C1C1C] h-[100vh] w-full flex">
-        <div className="mx-auto w-[90%] h-[80vh] mt-14 flex">
+        <motion.div className="mx-auto w-[90%] h-[80vh] mt-14 flex">
           <div className="h-full w-1/4  flex">
-            <motion.div className="bg-cover bg-center h-[90%] w-[90%] my-auto mx-auto bg-[url('/pic/me.png')] rounded-2xl"></motion.div>
+            <motion.div className="bg-cover bg-center h-[90%] w-[90%] my-auto mx-auto bg-[url('/pic/bg_me.png')] rounded-2xl"></motion.div>
           </div>
-          <div className="h-full w-3/4  flex">
+          <motion.div className="h-full w-3/4  flex">
             <div className="h-[90%] w-[95%]  mx-auto my-auto flex text-white font-inter flex-col">
               <div className=" font-bold text-[27px]  ">About me</div>
               <div className=" font-bold text-[54px] text-[#a1ecff] hover:text-[#b5f0ff] transition-colors">
@@ -44,8 +53,8 @@ const Home = () => {
               </div>
               <Tab_Profile />
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
       <Skill />
     </>
