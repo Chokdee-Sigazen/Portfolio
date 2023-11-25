@@ -1,3 +1,7 @@
+import Skill from "./Skill";
+import Tab_Profile from "./Tabs_Profile";
+import { motion } from "framer-motion";
+
 const Home = () => {
   return (
     <>
@@ -17,10 +21,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-[#1C1C1C] min-h-[100vh] w-full flex \\">
+      <div className=" bg-[#1C1C1C] h-[100vh] w-full flex">
         <div className="mx-auto w-[90%] h-[80vh] mt-14 flex">
           <div className="h-full w-1/4  flex">
-            <div className="bg-cover bg-center h-[90%] w-[90%] my-auto mx-auto bg-[url('/pic/me.png')] rounded-2xl"></div>
+            <motion.div className="bg-cover bg-center h-[90%] w-[90%] my-auto mx-auto bg-[url('/pic/me.png')] rounded-2xl"></motion.div>
           </div>
           <div className="h-full w-3/4  flex">
             <div className="h-[90%] w-[95%]  mx-auto my-auto flex text-white font-inter flex-col">
@@ -38,24 +42,12 @@ const Home = () => {
                 learning new things everyday and I hope to learn new things with
                 you :)
               </div>
-              <div className="flex mt-3">
-                <div className=" text-[20px] font-bold underline"> Skils</div>
-                <div className="w-4"></div>
-                <div className=" text-[20px]  font-bold hover:underline">
-                  Education
-                </div>
-              </div>
-              <div className="h-3"></div>
-              <div className=" text-[#4FF2DF]">UI/UX</div>
-              <div className="text-[18px] mb-2">
-                Designing Web/App interfaces
-              </div>
-              <div className=" text-[#4FF2DF]">Web Development</div>
-              <div className="text-[18px] mb-2">Web app Development</div>
+              <Tab_Profile />
             </div>
           </div>
         </div>
       </div>
+      <Skill />
     </>
   );
 };
