@@ -1,7 +1,10 @@
 const Footer = () => {
   return (
     <div>
-      <div className=" h-[40vh]  w-full bg-[url('/pic/bg_footer.png')] ">
+      <div
+        className=" h-[40vh]  w-full bg-[url('/pic/bg_footer.png')] "
+        id="contact"
+      >
         <div className="w-full h-full bg-gradient-to-b from-[#1C1C1C] to-transparent flex justify-between items-center">
           <div className=" mx-14 text-white font-inter font-bold text-3xl">
             Contact me

@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
+import NavBar from "./NavBar";
 
 const Home = () => {
   return (
     <>
       <div className="bg-cover bg-fixed bg-center bg-[url('/pic/Home-bg2.gif')] bg-blue-900 w-full h-[100vh] flex">
+        <NavBar />
         <motion.div
           className=" my-auto "
           initial={{ opacity: 0, scale: 0.5 }}
