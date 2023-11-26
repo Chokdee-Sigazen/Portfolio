@@ -15,7 +15,7 @@ const CroissantBonk = ({ pic }: Data) => {
         </div>
         <div className="flex h-8 text-white my-3 ">
           <button className="w-auto bg-[#7B6ABF]  rounded-lg flex items-center hover:bg-[#5d5190] transition-colors duration-200 ">
-            <div className="w-5 h-5 my-1 ml-2 mr-1 bg-white rounded-full"></div>
+            <div className="w-5 h-5 my-1 ml-2 mr-1 bg-[url('/pic/github.png')] bg-cover bg-center my-auto rounded-full"></div>
             <div className="font-bold mr-3">code</div>
           </button>
           <button className="w-auto bg-[#5787A2] ml-2 rounded-lg flex items-center hover:bg-[#3c5d70] transition-colors duration-200">

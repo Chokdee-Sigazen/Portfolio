@@ -1,22 +1,49 @@
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
 
+type Data = {
+  stateWeb: any;
+  stateUI: any;
+  changeStateWeb: any;
+  changeStateUI: any;
+};
+
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Example({ changeStateWeb, changeStateUI }: Data) {
+  const handleClickScrollUI = () => {
+    const element = document.getElementById("skill");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+      changeStateWeb(0);
+      changeStateUI(1);
+    }
+  };
+  const handleClickScrollWeb = () => {
+    const element = document.getElementById("skill");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+      changeStateWeb(1);
+      changeStateUI(0);
+    }
+  };
   const [categories] = useState({
     Skill: [
       {
         id: 1,
         title: "UI/UX",
         date: "Designing Web/App interfaces",
+        OnClick: handleClickScrollUI,
       },
       {
         id: 2,
         title: "Web Development",
         date: "Web app Development",
+        OnClick: handleClickScrollWeb,
       },
     ],
     Education: [
@@ -24,11 +51,13 @@ export default function Example() {
         id: 1,
         title: "2017 - 2022",
         date: "Princess Chulabhorn Science High School | GPAX:3.67",
+        OnClick: "",
       },
       {
         id: 2,
         title: "2023 - now",
         date: "Chulalongkorn University | Computer Engineer",
+        OnClick: "",
       },
     ],
   });
@@ -77,8 +106,8 @@ export default function Example() {
                       <li>{post.date}</li>
                     </ul>
 
-                    <a
-                      href="#"
+                    <button
+                      onClick={post.OnClick}
                       className={classNames(
                         "absolute inset-0 rounded-md",
                         "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"

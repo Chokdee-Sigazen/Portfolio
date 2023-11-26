@@ -1,10 +1,30 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 type Data = {
   Show: number;
+  statePic: any;
+  changeStatepic: any;
 };
 
-const Info_Skill_webApp = ({ Show }: Data) => {
+const Info_Skill_webApp = ({ Show, changeStatepic }: Data) => {
+  const handleClickScrollProject0 = () => {
+    const element = document.getElementById("project");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+      changeStatepic(0);
+    }
+  };
+
+  const handleClickScrollProject1 = () => {
+    const element = document.getElementById("project");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+      changeStatepic(1);
+    }
+  };
+
   const handleOnClickNext = () => {
     return changeStateSelect((stateSelect + 1) % 2);
   };
@@ -31,7 +51,7 @@ const Info_Skill_webApp = ({ Show }: Data) => {
         </div>
         <div className="flex h-8 ">
           <button className="w-auto bg-[#7B6ABF]  rounded-lg flex items-center hover:bg-[#5d5190] transition-colors duration-200 ">
-            <div className="w-5 h-5 my-1 ml-2 mr-1 bg-white rounded-full"></div>
+            <div className="w-5 h-5 my-1 ml-2 mr-1 bg-[url('/pic/github.png')] bg-cover bg-center  rounded-full"></div>
             <div className="font-bold mr-3">code</div>
           </button>
           <button className="w-auto bg-[#5787A2] ml-2 rounded-lg flex items-center hover:bg-[#3c5d70] transition-colors duration-200">
@@ -59,7 +79,10 @@ const Info_Skill_webApp = ({ Show }: Data) => {
           their ideas anonymously.
         </div>
         <div className="h-10 flex my-2 ">
-          <button className="w-auto h-full bg-[#4c628f] rounded-sm flex items-center mr-2 hover:bg-[#313F5B] duration-150">
+          <button
+            className="w-auto h-full bg-[#4c628f] rounded-sm flex items-center mr-2 hover:bg-[#313F5B] duration-150"
+            onClick={handleClickScrollProject0}
+          >
             <div className=" mx-3 font-inter font-bold">readmore</div>
           </button>
           <button
@@ -85,7 +108,7 @@ const Info_Skill_webApp = ({ Show }: Data) => {
         <div className=" font-normal my-2">Project : Algorithm.io</div>
         <div className="flex h-8 ">
           <button className="w-auto bg-[#7B6ABF]  rounded-lg flex items-center hover:bg-[#5d5190] transition-colors duration-200 ">
-            <div className="w-5 h-5 my-1 ml-2 mr-1 bg-white rounded-full"></div>
+            <div className="w-5 h-5  ml-2 mr-1 bg-[url('/pic/github.png')] bg-cover bg-center my-auto  rounded-full"></div>
             <div className="font-bold mr-3">code</div>
           </button>
           <button className="w-auto bg-[#5787A2] ml-2 rounded-lg flex items-center hover:bg-[#3c5d70] transition-colors duration-200">
@@ -113,7 +136,10 @@ const Info_Skill_webApp = ({ Show }: Data) => {
           for hands-on practice.
         </div>
         <div className="h-10 flex my-2">
-          <button className="w-auto h-full bg-[#4c628f] rounded-sm flex items-center mr-2 hover:bg-[#313F5B] duration-150">
+          <button
+            onClick={handleClickScrollProject1}
+            className="w-auto h-full bg-[#4c628f] rounded-sm flex items-center mr-2 hover:bg-[#313F5B] duration-150"
+          >
             <div className=" mx-3 font-inter font-bold">readmore</div>
           </button>
           <button
