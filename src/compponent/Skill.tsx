@@ -21,7 +21,7 @@ const Skill = ({
 }: Data) => {
   return (
     <>
-      <div id="skill" className="bg-[#1C1C1C] h-14"></div>
+      <div id="skill" className="bg-[#1C1C1C] h-8"></div>
       <div className=" bg-[#1C1C1C] min-h-[90vh] h-auto w-full flex">
         <div className="mx-auto w-[90%] flex font-inter text-whit flex-col">
           <div className=" ml-10 text-[27px] font-bold text-white">
