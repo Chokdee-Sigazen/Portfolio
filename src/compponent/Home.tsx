@@ -1,5 +1,6 @@
 import Skill from "./Skill";
 import Tab_Profile from "./Tabs_Profile";
+import Project from "./Project";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -56,7 +57,11 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </div>
-      <Skill />
+      <div className="bg-[#1C1C1C] h-auto">
+        <Skill />
+        <Project />
+        <div className="h-[30vh]"></div>
+      </div>
     </>
   );
 };

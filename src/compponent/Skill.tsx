@@ -57,7 +57,6 @@ const Skill = () => {
           <Info_Skill_UIUX Show={stateUI}></Info_Skill_UIUX>
           <Info_Skill_webApp Show={StateWeb}></Info_Skill_webApp>
         </div>
-        <div></div>
       </div>
     </div>
   );

@@ -35,9 +35,8 @@ const Info_Skill_UIUX = ({ Show }: Data) => {
           </div>
         </div>
         <div className=" text-lg font-inter">
-          Croissant BONK Community is a web application designed exclusively for
-          the CEDT community. It provides a platform where members can share
-          their ideas anonymously.
+          I always use Adobe Photoshop and Figma when it come to designing
+          part.I start learning by designing Website project and Portfolio.
         </div>
         <div className="h-10 flex my-2">
           <button className="w-auto h-full bg-[#4c628f] rounded-sm flex items-center mr-2 hover:bg-[#313F5B] duration-150">
