@@ -50,14 +50,20 @@ const Info_Skill_webApp = ({ Show, changeStatepic }: Data) => {
           Project : Croissant Bonk Community
         </div>
         <div className="flex h-8 ">
-          <button className="w-auto bg-[#7B6ABF]  rounded-lg flex items-center hover:bg-[#5d5190] transition-colors duration-200 ">
+          <a
+            href="https://github.com/Chokdee-Sigazen/Croissant-Bonk-Community"
+            className="w-auto bg-[#7B6ABF]  rounded-lg flex items-center hover:bg-[#5d5190] transition-colors duration-200 "
+          >
             <div className="w-5 h-5 my-1 ml-2 mr-1 bg-[url('/pic/github.png')] bg-cover bg-center  rounded-full"></div>
             <div className="font-bold mr-3">code</div>
-          </button>
-          <button className="w-auto bg-[#5787A2] ml-2 rounded-lg flex items-center hover:bg-[#3c5d70] transition-colors duration-200">
+          </a>
+          <a
+            href="https://chokdee-sigazen.github.io/Croissant-Bonk-Community/"
+            className="w-auto bg-[#5787A2] ml-2 rounded-lg flex items-center hover:bg-[#3c5d70] transition-colors duration-200"
+          >
             <div className="w-5 h-5 my-1 ml-2 mr-1 bg-white rounded-full"></div>
             <div className="font-bold mr-3">live demo</div>
-          </button>
+          </a>
         </div>
         <div className="my-3 flex  h-auto flex-col">
           <div className="flex items-center ">
@@ -107,14 +113,20 @@ const Info_Skill_webApp = ({ Show, changeStatepic }: Data) => {
         <div className="font-bold text-3xl">Web app Development</div>
         <div className=" font-normal my-2">Project : Algorithm.io</div>
         <div className="flex h-8 ">
-          <button className="w-auto bg-[#7B6ABF]  rounded-lg flex items-center hover:bg-[#5d5190] transition-colors duration-200 ">
+          <a
+            href="https://github.com/Chokdee-Sigazen/Algorithm.io"
+            className="w-auto bg-[#7B6ABF]  rounded-lg flex items-center hover:bg-[#5d5190] transition-colors duration-200 "
+          >
             <div className="w-5 h-5  ml-2 mr-1 bg-[url('/pic/github.png')] bg-cover bg-center my-auto  rounded-full"></div>
             <div className="font-bold mr-3">code</div>
-          </button>
-          <button className="w-auto bg-[#5787A2] ml-2 rounded-lg flex items-center hover:bg-[#3c5d70] transition-colors duration-200">
+          </a>
+          <a
+            href="https://chokdee-sigazen.github.io/Algorithm.io/"
+            className="w-auto bg-[#5787A2] ml-2 rounded-lg flex items-center hover:bg-[#3c5d70] transition-colors duration-200"
+          >
             <div className="w-5 h-5 my-1 ml-2 mr-1 bg-white rounded-full"></div>
             <div className="font-bold mr-3">live demo</div>
-          </button>
+          </a>
         </div>
         <div className="my-3 flex  h-auto flex-col">
           <div className="flex items-center ">

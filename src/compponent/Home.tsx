@@ -22,12 +22,15 @@ const Home = () => {
           <div className="ml-10 mt-3 font-inter text-5xl font-bold text-[#52C0E4]">
             Website Portfolio
           </div>
-          <div className="ml-10 h-12 w-36 bg-[#7B6ABF] mt-7 rounded-xl flex flex-row transition-colors hover:bg-[#9a85ee]">
+          <a
+            className="ml-10 h-12 w-36 bg-[#7B6ABF] mt-7 rounded-xl flex flex-row transition-colors hover:bg-[#9a85ee] "
+            href="https://github.com/Chokdee-Sigazen"
+          >
             <div className="h-7 w-7 bg-[url('/pic/github.png')] bg-cover bg-center my-auto ml-4"></div>
             <div className="my-auto font-inter font-bold text-white ml-3 text-xl">
               github
             </div>
-          </div>
+          </a>
         </motion.div>
       </div>
     </>
