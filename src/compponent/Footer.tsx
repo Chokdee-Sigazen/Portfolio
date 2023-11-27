@@ -18,10 +18,13 @@ const Footer = () => {
               <div className="mx-4">098-848-1994</div>
               <div className="h-6 w-6 bg-[url('/pic/tel.png')] bg-cover bg-center"></div>
             </div>
-            <div className="flex my-3 ">
+            <a
+              href="https://www.facebook.com/profile.php?id=100004068258325"
+              className="flex my-3 "
+            >
               <div className="mx-4"> ปรัชญาพงษ์ มโนศิลปกร</div>
               <div className="h-6 w-6 bg-[url('/pic/facebook.png')] bg-cover bg-center"></div>
-            </div>
+            </a>
             <div className="flex my-3 ">
               <div className="mx-4">chokdee50</div>
               <div className="h-6 w-6 bg-[url('/pic/line.png')] bg-cover bg-center"></div>
