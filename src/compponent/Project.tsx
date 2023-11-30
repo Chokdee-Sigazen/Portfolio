@@ -29,7 +29,7 @@ const Project = ({ statePic, changeStatepic }: Data) => {
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className=" text-white font-inter font-bold text-3xl ml-10 mb-3">
+          <div className=" text-white font-inter font-bold text-3xl mb-3">
             Project
           </div>
           <div className=" w-full h-[70vh]  items-center rounded-2xl my-5 opacity-90 hover:opacity-100 relative transition-opacity duration-150 overflow-hidden">

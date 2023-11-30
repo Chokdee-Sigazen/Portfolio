@@ -29,9 +29,7 @@ const Skill = ({
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className=" ml-10 text-[27px] font-bold text-white">
-            My skills
-          </div>
+          <div className="  text-[27px] font-bold text-white">My skills</div>
           <div className="h-[65vh] my-10 flex">
             <motion.button
               onClick={() => {
@@ -42,7 +40,7 @@ const Skill = ({
                 changeStateWeb(1);
                 changeStateUI(0);
               }}
-              className={`h-full bg-gradient-to-b from-black to-cyan-300 via-teal-800 bg-size-200  w-80 rounded-2xl mx-4 bg-pos-0  transition-all duration-500 ${
+              className={`h-full bg-gradient-to-b from-black to-cyan-300 via-teal-800 bg-size-200  w-80 rounded-2xl bg-pos-0  transition-all duration-500 ${
                 stateWeb ? "bg-pos-100" : "bg-pos-0"
               }`}
             >

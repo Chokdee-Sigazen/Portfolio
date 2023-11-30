@@ -4,6 +4,7 @@ import AboutMe from "./compponent/AboutMe";
 import Skill from "./compponent/Skill";
 import Project from "./compponent/Project";
 import Footer from "./compponent/Footer";
+import Archive from "./compponent/Archive";
 
 export default function App() {
   const [StateWeb, changeStateWeb] = useState(1);
@@ -27,6 +28,7 @@ export default function App() {
         changeStatepic={changeStatepic}
       />
       <Project statePic={statePic} changeStatepic={changeStatepic} />
+      <Archive />
       <Footer />
     </>
   );
