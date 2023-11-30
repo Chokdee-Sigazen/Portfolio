@@ -5,7 +5,7 @@ interface Data {
   Pic: string[];
 }
 
-const Archive_Info_TA = ({ Pic }: Data) => {
+const Archive_Info_Sympo = ({ Pic }: Data) => {
   const [stateShow0, changeStateShow0] = useState(0);
   const [stateShow1, changeStateShow1] = useState(1);
   const [stateShow2, changeStateShow2] = useState(2);
@@ -36,17 +36,17 @@ const Archive_Info_TA = ({ Pic }: Data) => {
           <div className="w-full h-2/5 flex items-center">
             <div className="h-[90%] w-[96%]  mx-auto">
               <div className=" text-xl font-bold">
-                Teacher Assistance for POSN computer camp 1 , 2 and 3
+                Gold medal The 2nd PCSHS Symposium Topic “Poster Presentation”
               </div>
               <div className="my-3">2023 - march</div>
               <div className="mb-2">NAN</div>
               <div className="mb-2">NAN</div>
             </div>
           </div>
-          <div className="bg-[url('/pic/archive/TA/Ta0.jpg')] hidden"></div>
-          <div className="bg-[url('/pic/archive/TA/Ta1.jpg')] hidden"></div>
-          <div className="bg-[url('/pic/archive/TA/Ta2.jpg')] hidden"></div>
-          <div className="bg-[url('/pic/archive/TA/Ta3.jpg')] hidden"></div>
+          <div className="bg-[url('/pic/archive/Sympo/S0.png')] hidden"></div>
+          <div className="bg-[url('/pic/archive/Sympo/S1.png')] hidden"></div>
+          <div className="bg-[url('/pic/archive/Sympo/S2.png')] hidden"></div>
+          <div className="bg-[url('/pic/archive/Sympo/S3.png')] hidden"></div>
           <div className="  w-full h-3/5 flex">
             <div className="w-2"></div>
             <motion.button
@@ -71,4 +71,4 @@ const Archive_Info_TA = ({ Pic }: Data) => {
   );
 };
 
-export default Archive_Info_TA;
+export default Archive_Info_Sympo;
