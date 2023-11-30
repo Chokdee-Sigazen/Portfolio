@@ -1,19 +1,14 @@
 import { Carousel } from "flowbite-react";
-import Archive_Info from "./Archive_Info";
+import Archive_Info_TOI from "./Archive/Archive_Info_TOI";
 
 const Data = [
   {
     Pic: [
-      "/pic/archive/toi/toi1.png",
-      "/pic/archive/toi/toi1.png",
-      "/pic/archive/toi/toi1.png",
-      "/pic/archive/toi/toi1.png",
+      "/pic/archive/toi/toi0.jpg",
+      "/pic/archive/toi/toi1.jpg",
+      "/pic/archive/toi/toi2.jpg",
+      "/pic/archive/toi/toi3.jpg",
     ],
-    topic: "TOI 17 & 18 Bronze medal (Thailand Olympiad in Informatic)",
-    date: "2022 - june",
-    info1: "Using C++ for solve problems.",
-    info2:
-      "Earning a bronze medal in TOI18 is my starting point for learning Computer Programming.",
   },
   {
     Pic: [
@@ -22,11 +17,6 @@ const Data = [
       "/pic/archive/toi/toi1.png",
       "/pic/archive/toi/toi1.png",
     ],
-    topic: "Teacher Assistance for POSN computer camp 1 , 2 and 3",
-    date: "2022 - june",
-    info1: "Using C++ for solve problems.",
-    info2:
-      "Earning a bronze medal in TOI18 is my starting point for learning Computer Programming.",
   },
 ];
 
@@ -39,15 +29,7 @@ const Archive = () => {
             Archive
           </div>
           <Carousel pauseOnHover>
-            {Data.map((tmp) => (
-              <Archive_Info
-                Pic={tmp.Pic}
-                date={tmp.date}
-                topic={tmp.topic}
-                info1={tmp.info1}
-                info2={tmp.info2}
-              />
-            ))}
+            <Archive_Info_TOI Pic={Data[0].Pic} />
           </Carousel>
         </div>
       </div>
