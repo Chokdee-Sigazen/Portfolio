@@ -38,7 +38,7 @@ const Archive_Info_Sympo = ({ Pic }: Data) => {
               <div className=" text-xl font-bold">
                 Gold medal The 2nd PCSHS Symposium Topic “Poster Presentation”
               </div>
-              <div className="my-3">2023 - march</div>
+              <div className="my-3">2022 - december</div>
               <div className="mb-2">NAN</div>
               <div className="mb-2">NAN</div>
             </div>

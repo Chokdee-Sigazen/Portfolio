@@ -40,8 +40,8 @@ const Archive = () => {
           </div>
           <Carousel pauseOnHover>
             <Archive_Info_TOI Pic={Data[0].Pic} />
-            <Archive_Info_TA Pic={Data[1].Pic} />
             <Archive_Info_Sympo Pic={Data[2].Pic} />
+            <Archive_Info_TA Pic={Data[1].Pic} />
           </Carousel>
         </div>
       </div>
