@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 interface Data {
-  pic: string[];
+  Pic: string[];
   topic: string;
   date: string;
   info1: string;
   info2: string;
 }
 
-const Archive_Info = ({ pic, topic, date, info1, info2 }: Data) => {
+const Archive_Info = ({ Pic, topic, date, info1, info2 }: Data) => {
   const [stateShow0, changeStateShow0] = useState(0);
   const [stateShow1, changeStateShow1] = useState(1);
   const [stateShow2, changeStateShow2] = useState(2);
@@ -34,7 +34,7 @@ const Archive_Info = ({ pic, topic, date, info1, info2 }: Data) => {
     <div>
       <div className=" my-4 h-[70vh]  w-full rounded-xl flex overflow-hidden">
         <div
-          className={`h-full w-1/3 rounded-xl bg-cover bg-center bg-[url('${pic[stateShow0]}')] transitition-all duration-300`}
+          className={`h-full w-1/3 rounded-xl bg-cover bg-center bg-[url('${Pic[stateShow0]}')] transitition-all duration-300`}
         ></div>
         <div className="h-full  w-2/3 rounded-xl flex flex-col">
           <div className="w-full h-2/5 flex items-center">
@@ -50,17 +50,17 @@ const Archive_Info = ({ pic, topic, date, info1, info2 }: Data) => {
             <motion.button
               onClick={HandleOnClick1}
               whileHover={{ scale: 1.05 }}
-              className={`h-full w-[30%] bg-cover bg-center bg-[url('${pic[stateShow1]}')] mx-2 rounded-lg transitition-all duration-300`}
+              className={`h-full w-[30%] bg-cover bg-center bg-[url('${Pic[stateShow1]}')] mx-2 rounded-lg transitition-all duration-300`}
             ></motion.button>
             <motion.button
               onClick={HandleOnClick2}
               whileHover={{ scale: 1.05 }}
-              className={`h-full w-[30%] bg-cover bg-center bg-[url('${pic[stateShow2]}')] mx-2 rounded-lg transitition-all duration-300`}
+              className={`h-full w-[30%] bg-cover bg-center bg-[url('${Pic[stateShow2]}')] mx-2 rounded-lg transitition-all duration-300`}
             ></motion.button>
             <motion.button
               onClick={HandleOnClick3}
               whileHover={{ scale: 1.05 }}
-              className={`h-full w-[30%] bg-cover bg-center bg-[url('${pic[stateShow3]}')] mx-2 rounded-lg transitition-all duration-300`}
+              className={`h-full w-[30%] bg-cover bg-center bg-[url('${Pic[stateShow3]}')] mx-2 rounded-lg transitition-all duration-300`}
             ></motion.button>
           </div>
         </div>

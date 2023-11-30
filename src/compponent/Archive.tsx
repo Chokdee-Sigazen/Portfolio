@@ -3,11 +3,11 @@ import Archive_Info from "./Archive_Info";
 
 const Data = [
   {
-    pic: [
-      "/pic/archive/toi/toi1.jpg",
-      "/pic/archive/toi/toi2.jpg",
-      "/pic/archive/toi/toi3.jpg",
-      "/pic/archive/toi/toi4.jpg",
+    Pic: [
+      "/pic/archive/toi/toi1.png",
+      "/pic/archive/toi/toi1.png",
+      "/pic/archive/toi/toi1.png",
+      "/pic/archive/toi/toi1.png",
     ],
     topic: "TOI 17 & 18 Bronze medal (Thailand Olympiad in Informatic)",
     date: "2022 - june",
@@ -16,11 +16,11 @@ const Data = [
       "Earning a bronze medal in TOI18 is my starting point for learning Computer Programming.",
   },
   {
-    pic: [
-      "/pic/archive/TA/Ta0.jpg",
-      "/pic/archive/TA/Ta1.jpg",
-      "/pic/archive/TA/Ta2.jpg",
-      "/pic/archive/TA/Ta3.jpg",
+    Pic: [
+      "/pic/archive/toi/toi1.png",
+      "/pic/archive/toi/toi1.png",
+      "/pic/archive/toi/toi1.png",
+      "/pic/archive/toi/toi1.png",
     ],
     topic: "Teacher Assistance for POSN computer camp 1 , 2 and 3",
     date: "2022 - june",
@@ -41,7 +41,7 @@ const Archive = () => {
           <Carousel pauseOnHover>
             {Data.map((tmp) => (
               <Archive_Info
-                pic={tmp.pic}
+                Pic={tmp.Pic}
                 date={tmp.date}
                 topic={tmp.topic}
                 info1={tmp.info1}
