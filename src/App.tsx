@@ -3,7 +3,6 @@ import { useState } from "react";
 import AboutMe from "./compponent/AboutMe";
 import Skill from "./compponent/Skill";
 import Project from "./compponent/Project";
-
 import Footer from "./compponent/Footer";
 
 export default function App() {

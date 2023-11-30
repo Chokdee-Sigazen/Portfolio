@@ -10,7 +10,7 @@ const Info_Skill_UIUX = ({ Show }: Data) => {
           Show ? "opacity-100" : " invisible opacity-0"
         }`}
       >
-        <div className="font-bold text-3xl">UI/UX</div>
+        <div className="font-bold text-3xl">UX/UI</div>
         <div className=" font-normal my-2"></div>
         <div className="flex h-8 ">
           <button className="w-auto bg-[#7B6ABF]  rounded-lg flex items-center hover:bg-[#5d5190] transition-colors duration-200 ">

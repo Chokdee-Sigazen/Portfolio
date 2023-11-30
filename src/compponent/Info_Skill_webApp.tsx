@@ -131,7 +131,7 @@ const Info_Skill_webApp = ({ Show, changeStatepic }: Data) => {
         <div className="my-3 flex  h-auto flex-col">
           <div className="flex items-center ">
             <div className="w-6 h-6 my-1 ml-2 mr-1 bg-cover bg-center bg-[url('/pic/react.png')] rounded-sm"></div>
-            <div className=" font-inter mx-1"> React</div>
+            <div className=" font-inter mx-1"> React TS</div>
           </div>
           <div className="flex items-center ">
             <div className="w-6 h-6 my-1 ml-2 mr-1 bg-cover bg-center bg-[url('/pic/tailwind.png')] rounded-sm"></div>

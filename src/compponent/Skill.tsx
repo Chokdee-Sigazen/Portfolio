@@ -22,8 +22,13 @@ const Skill = ({
   return (
     <>
       <div id="skill" className="bg-[#1C1C1C] h-8"></div>
-      <div className=" bg-[#1C1C1C] min-h-[90vh] h-auto w-full flex">
-        <div className="mx-auto w-[90%] flex font-inter text-whit flex-col">
+      <div className=" bg-[#1C1C1C] min-h-[90vh] h-auto w-full flex overflow-hidden">
+        <motion.div
+          className="mx-auto w-[90%] flex font-inter text-whit flex-col"
+          initial={{ x: 75 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className=" ml-10 text-[27px] font-bold text-white">
             My skills
           </div>
@@ -68,7 +73,7 @@ const Skill = ({
                 className="w-full h-full bg-[url('/pic/UIUX.png')] bg-cover bg-center"
               ></motion.div>
               <div className="text-white my-3 text-center font-inter text-xl font-bold">
-                UI/UX Design
+                UX/UI Design
               </div>
             </button>
             <Info_Skill_UIUX Show={stateUI}></Info_Skill_UIUX>
@@ -78,7 +83,7 @@ const Skill = ({
               changeStatepic={changeStatepic}
             ></Info_Skill_webApp>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

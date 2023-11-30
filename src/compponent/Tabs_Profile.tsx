@@ -35,15 +35,15 @@ export default function Example({ changeStateWeb, changeStateUI }: Data) {
     Skill: [
       {
         id: 1,
-        title: "UI/UX",
-        date: "Designing Web/App interfaces",
-        OnClick: handleClickScrollUI,
-      },
-      {
-        id: 2,
         title: "Web Development",
         date: "Web app Development",
         OnClick: handleClickScrollWeb,
+      },
+      {
+        id: 2,
+        title: "UI/UX",
+        date: "Designing Web/App interfaces",
+        OnClick: handleClickScrollUI,
       },
     ],
     Education: [

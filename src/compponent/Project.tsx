@@ -3,17 +3,19 @@ import Algorithm from "./project/Algorithm";
 import Bg_Croissant from "./bg_project/Bg_Croissant";
 import Bg_Algorithm from "./bg_project/Bg_Algorithm";
 
+import { motion } from "framer-motion";
+
 type Data = {
   statePic: any;
   changeStatepic: any;
 };
 
 const Project = ({ statePic, changeStatepic }: Data) => {
-  const HandleOnclickRight = () => {
+  const HandleOnclickLeft = () => {
     if (statePic == 0) return changeStatepic(1);
     return changeStatepic(statePic - 1);
   };
-  const HandleOnclickLeft = () => {
+  const HandleOnclickRight = () => {
     return changeStatepic((statePic + 1) % 2);
   };
 
@@ -21,7 +23,12 @@ const Project = ({ statePic, changeStatepic }: Data) => {
     <div>
       <div id="project" className="bg-[#1C1C1C] h-14"></div>
       <div className=" bg-[#1C1C1C] min-h-[150vh] h-auto w-full flex">
-        <div className=" w-[90%] mx-auto flex flex-col">
+        <motion.div
+          className=" w-[90%] mx-auto flex flex-col"
+          initial={{ x: -50 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className=" text-white font-inter font-bold text-3xl ml-10 mb-3">
             Project
           </div>
@@ -47,7 +54,7 @@ const Project = ({ statePic, changeStatepic }: Data) => {
           </div>
           <CroissantBonk pic={statePic} />
           <Algorithm pic={statePic} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

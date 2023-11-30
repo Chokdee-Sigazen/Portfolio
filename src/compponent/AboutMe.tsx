@@ -18,7 +18,12 @@ const AboutMe = ({
     <div>
       <div id="aboutme" className="bg-[#1C1C1C] h-8"></div>
       <div className=" bg-[#1C1C1C] h-[100vh] w-full flex">
-        <motion.div className="mx-auto w-[90%] h-[80vh] mt-14 flex">
+        <motion.div
+          className="mx-auto w-[90%] h-[80vh] mt-14 flex"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+        >
           <div className="h-full w-1/4  flex">
             <motion.div className="bg-cover bg-center h-[90%] w-[90%] my-auto mx-auto bg-[url('/pic/bg_me.png')] rounded-2xl"></motion.div>
           </div>

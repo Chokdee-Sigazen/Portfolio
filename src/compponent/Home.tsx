@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import NavBar from "./NavBar";
 
 const Home = () => {
   return (
-    <>
-      <div className="bg-cover bg-fixed bg-center bg-[url('/pic/Home-bg2.gif')] bg-blue-900 w-full h-[100vh] flex">
+    <motion.div id="page">
+      <div className="bg-cover bg-fixed bg-center bg-[url('/pic/Home-bg2.gif')] bg-blue-900 w-full h-[100vh] flex overflow-hidden">
         <NavBar />
         <motion.div
           className=" my-auto "
@@ -17,11 +17,13 @@ const Home = () => {
           }}
         >
           <span className=" ml-10 font-inter text-3xl text-[#4FF2DF]">
-            Welcome to my
-          </span>
-          <div className="ml-10 mt-3 font-inter text-5xl font-bold text-[#52C0E4]">
             Website Portfolio
+          </span>
+
+          <div className="ml-10 mt-3 w-[full] font-inter text-4xl font-bold text-[#52C0E4]">
+            "Do you believe in Power of Learning?"
           </div>
+
           <a
             className="ml-10 h-12 w-36 bg-[#7B6ABF] mt-7 rounded-xl flex flex-row transition-colors hover:bg-[#9a85ee] "
             href="https://github.com/Chokdee-Sigazen"
@@ -33,7 +35,7 @@ const Home = () => {
           </a>
         </motion.div>
       </div>
-    </>
+    </motion.div>
   );
 };
 
