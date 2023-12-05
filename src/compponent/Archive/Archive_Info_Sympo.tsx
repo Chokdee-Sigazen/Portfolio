@@ -39,14 +39,19 @@ const Archive_Info_Sympo = ({ Pic }: Data) => {
                 Gold medal The 2nd PCSHS Symposium Topic “Poster Presentation”
               </div>
               <div className="my-3">2022 - december</div>
-              <div className="mb-2">NAN</div>
-              <div className="mb-2">NAN</div>
+              <div className="mb-2">
+                Acquired presentation and pitching skills.
+              </div>
+              <div className="mb-2">
+                Learn many Hardware skills. example IOT, Rasepberry PI, Arduino
+                and Design Skiil.
+              </div>
             </div>
           </div>
           <div className="bg-[url('/pic/archive/Sympo/S0.png')] hidden"></div>
           <div className="bg-[url('/pic/archive/Sympo/S1.png')] hidden"></div>
           <div className="bg-[url('/pic/archive/Sympo/S2.png')] hidden"></div>
-          <div className="bg-[url('/pic/archive/Sympo/S3.png')] hidden"></div>
+          <div className="bg-[url('/pic/archive/Sympo/S3.jpg')] hidden"></div>
           <div className="  w-full h-3/5 flex">
             <div className="w-2"></div>
             <motion.button
