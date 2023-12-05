@@ -9,6 +9,22 @@ const handleClickScrollAboutMe = () => {
   }
 };
 
+const handleClickScrollArchive = () => {
+  const element = document.getElementById("Archive");
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const handleClickScrollContactMe = () => {
+  const element = document.getElementById("ContactMe");
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const handleClickScrollSkill = () => {
   const element = document.getElementById("skill");
   if (element) {
@@ -38,7 +54,8 @@ const navigation = [
   { name: "About me", href: handleClickScrollAboutMe, current: false },
   { name: "Skill", href: handleClickScrollSkill, current: false },
   { name: "Project", href: handleClickScrollProject, current: false },
-  { name: "Contact me", href: handleClickScrollContact, current: false },
+  { name: "Archive", href: handleClickScrollArchive, current: false },
+  { name: "Contact me", href: handleClickScrollContactMe, current: false },
 ];
 
 function classNames(...classes: any) {

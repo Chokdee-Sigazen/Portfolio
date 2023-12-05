@@ -34,7 +34,8 @@ const Data = [
 const Archive = () => {
   return (
     <div>
-      <div className=" bg-[#1C1C1C] w-full h-full min-h-[100vh] font-inter text-white">
+      <div id="Archive" className="bg-[#1C1C1C] h-12 "></div>
+      <div className=" bg-[#1C1C1C] w-full h-full min-h-auto font-inter text-white">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -49,6 +50,7 @@ const Archive = () => {
             <Archive_Info_Sympo Pic={Data[2].Pic} />
             <Archive_Info_TA Pic={Data[1].Pic} />
           </Carousel>
+          <div className="h-24"></div>
         </motion.div>
       </div>
     </div>

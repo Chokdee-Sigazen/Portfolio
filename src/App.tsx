@@ -5,6 +5,7 @@ import Skill from "./compponent/Skill";
 import Project from "./compponent/Project";
 import Footer from "./compponent/Footer";
 import Archive from "./compponent/Archive";
+import ContactMe from "./compponent/ContactMe";
 
 export default function App() {
   const [StateWeb, changeStateWeb] = useState(1);
@@ -29,7 +30,7 @@ export default function App() {
       />
       <Project statePic={statePic} changeStatepic={changeStatepic} />
       <Archive />
-      <Footer />
+      <ContactMe />
     </>
   );
 }
