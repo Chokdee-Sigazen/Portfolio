@@ -37,11 +37,10 @@ const AboutMe = ({
                 Manosilapakorn
               </div>
               <div className=" font-normal text-[17px]">
-                This is my website. I'm just normal chill guys that have fun
-                when I have learn something new. I'm interested in Frontend
-                Development, Backend Development and UI/UX designer. I still
-                learning new things everyday and I hope to learn new things with
-                you :)
+                This is my website. I am computer engineering student with interested in Full-Stack website and
+application development. I always enjoy when I make and learn somethings new
+while making projects. I still learning new things every day and I hope to learn
+new things with you.
               </div>
               <Tab_Profile
                 stateWeb={stateWeb}
