@@ -44,6 +44,10 @@ const Archive_Info_TOI = ({ Pic }: Data) => {
                 Earning a bronze medal in TOI18 is my starting point for
                 learning Computer Programming.
               </div>
+              <div className="mb-2">
+                Built solid programming skills through dedicated practice for
+                TOI1ึ7 & TOI18.
+              </div>
             </div>
           </div>
           <div className="bg-[url('/pic/archive/toi/toi1.jpg')] hidden"></div>

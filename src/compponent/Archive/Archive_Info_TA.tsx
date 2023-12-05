@@ -39,8 +39,11 @@ const Archive_Info_TA = ({ Pic }: Data) => {
                 Teacher Assistance for POSN computer camp 1 , 2 and 3
               </div>
               <div className="my-3">2023 - march</div>
-              <div className="mb-2">NAN</div>
-              <div className="mb-2">NAN</div>
+              <div className="mb-2">Learned teamwork experience.</div>
+              <div className="mb-2">
+                As a leader in the camp, I developed strong leadership skills
+                and learned effective decision making.
+              </div>
             </div>
           </div>
           <div className="bg-[url('/pic/archive/TA/Ta0.jpg')] hidden"></div>
