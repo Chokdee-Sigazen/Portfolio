@@ -11,7 +11,10 @@ Welcome to my Portfolio! This repository showcases my work and provides an overv
 
 ## About Me
 
- I'm just normal chill guys that have fun when I have learn something new. I'm interested in Frontend Development, Backend Development and UI/UX designer. I still learning new things everyday and I hope to learn new things with you :)
+ I am computer engineering student with interested in Full-Stack website and
+application development. I always enjoy when I make and learn somethings new
+while making projects. I still learning new things every day and I hope to learn
+new things with you :)
 
 ## Skills
 
